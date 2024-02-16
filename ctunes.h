@@ -16,7 +16,7 @@ public:
     void addSong(string, string, Genero::genero,double,QString);
     void reviewSong(int, int);
     string downloadSong(int , string );
-    QString songs(string);
+    QString songs(QString);
     string infoSong(int);
    // bool buscarCode(int);
     template <typename tipodato>

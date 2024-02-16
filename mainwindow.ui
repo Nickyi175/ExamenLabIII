@@ -17,14 +17,14 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>-10</x>
       <y>0</y>
       <width>801</width>
       <height>571</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QPushButton" name="addbtn">
@@ -110,8 +110,8 @@
      <widget class="QPushButton" name="volveradd">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>40</y>
+        <x>650</x>
+        <y>480</y>
         <width>83</width>
         <height>29</height>
        </rect>
@@ -136,8 +136,8 @@
      <widget class="QLineEdit" name="nombretxt">
       <property name="geometry">
        <rect>
-        <x>330</x>
-        <y>130</y>
+        <x>370</x>
+        <y>120</y>
         <width>113</width>
         <height>28</height>
        </rect>
@@ -149,8 +149,8 @@
      <widget class="QLineEdit" name="cantantetxt">
       <property name="geometry">
        <rect>
-        <x>330</x>
-        <y>180</y>
+        <x>370</x>
+        <y>170</y>
         <width>113</width>
         <height>28</height>
        </rect>
@@ -159,7 +159,7 @@
      <widget class="QLineEdit" name="preciotxt">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>370</x>
         <y>270</y>
         <width>113</width>
         <height>28</height>
@@ -169,7 +169,7 @@
      <widget class="QComboBox" name="generCB">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>370</x>
         <y>220</y>
         <width>111</width>
         <height>31</height>
@@ -214,8 +214,8 @@
      <widget class="QTimeEdit" name="timeEdit">
       <property name="geometry">
        <rect>
-        <x>330</x>
-        <y>330</y>
+        <x>370</x>
+        <y>320</y>
         <width>118</width>
         <height>29</height>
        </rect>
@@ -227,29 +227,153 @@
      <widget class="QPushButton" name="add">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>390</y>
+        <x>300</x>
+        <y>370</y>
         <width>83</width>
         <height>29</height>
        </rect>
       </property>
       <property name="text">
-       <string>add song</string>
+       <string>Add Song</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>120</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre de la canción:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>170</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cantante:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>230</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Género de la canción:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>270</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Precio de la canción:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>320</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Duración:</string>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="volverSongs">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>250</y>
+        <x>680</x>
+        <y>500</y>
         <width>83</width>
         <height>29</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Regresar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Reporte Songs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>110</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre del archivo: </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NomArch">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>150</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="SalidaReport">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>250</y>
+        <width>581</width>
+        <height>141</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="crear">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>190</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Crear Archivo</string>
       </property>
      </widget>
     </widget>
@@ -303,14 +427,29 @@
      <widget class="QPushButton" name="regresarInfo">
       <property name="geometry">
        <rect>
-        <x>650</x>
-        <y>30</y>
+        <x>680</x>
+        <y>440</y>
         <width>83</width>
         <height>29</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Regresar</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>60</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Download Songs</string>
       </property>
      </widget>
     </widget>

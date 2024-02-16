@@ -30,6 +30,14 @@ private slots:
 
     void on_infobtn_pressed();
 
+    void on_lisbtn_pressed();
+
+    void on_crear_pressed();
+
+    void on_volverSongs_pressed();
+
+    void on_regresarInfo_pressed();
+
 private:
     Ui::MainWindow *ui;
 };

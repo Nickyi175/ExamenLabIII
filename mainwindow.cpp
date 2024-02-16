@@ -92,3 +92,30 @@ void MainWindow::on_infobtn_pressed()
     ui->stackedWidget->setCurrentIndex(3);
 }
 
+
+void MainWindow::on_lisbtn_pressed()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_crear_pressed()
+{
+    CTunes ct;
+    QString reporte = ui->NomArch->text();
+    QString report = ct.songs(reporte);
+    ui->SalidaReport->setText(report);
+}
+
+
+void MainWindow::on_volverSongs_pressed()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_regresarInfo_pressed()
+{
+     ui->stackedWidget->setCurrentIndex(0);
+}
+
