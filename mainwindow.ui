@@ -13,7 +13,309 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="addbtn">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>110</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add Song</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reviewbtn">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>170</y>
+        <width>101</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Review Song</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="downbtn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>121</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Download Song</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lisbtn">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>300</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Song List</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="infobtn">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>370</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Info Songs</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>30</y>
+        <width>241</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Menu Principal&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="volveradd">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>40</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Regresar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Add Songs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nombretxt">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>130</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cantantetxt">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>180</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="preciotxt">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>270</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="generCB">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>220</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>DANCE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ELECTRONICA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RANCHERA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>POP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RAP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>REGGAE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ROCK</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QTimeEdit" name="timeEdit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>330</y>
+        <width>118</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="displayFormat">
+       <string>mm:ss</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>390</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>add song</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>250</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Info songs</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>140</y>
+        <width>451</width>
+        <height>281</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="codtxt">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>90</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Buscar">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>80</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Buscar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="regresarInfo">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>30</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
